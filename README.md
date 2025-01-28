@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# Game engine for creating interactive learning experiences
 
 ## Install dependencies
 
