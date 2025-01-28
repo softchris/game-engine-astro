@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+	</head>
+	<body>
+      <div>
+		<slot />
+      </div>
+	</body>
+</html>
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+  body {
+    font-family: 'MedievalSharp', cursive;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    
+    margin: 0 auto;
+    margin-left: 400px;
+    @media (max-width: 1352px) {
+      margin-left: 0;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  
+</style>

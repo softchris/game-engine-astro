@@ -1,11 +1,41 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navigate from '../components/Navigate.astro';
+import GameLayout from '../layouts/GameLayout.astro'; 
+import LevelLayout from '../layouts/LevelLayout.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<GameLayout>
+	<LevelLayout>
+
+	<h1 class="title">Azurian caves</h1>
+
+	<div class="bg circle-border">
+    	<img width=400 height=400 src="/images/azure.png"  />
+	</div>
+
+	Welcome to the Azurian Caves, a Microsoft adventure
+	<Navigate room="1" class="fade-in" />
+	</LevelLayout>
+
+</GameLayout>
+
+<style>
+
+.title {
+	font-family: 'Cinzel', serif;
+	font-size: 3em;
+	color: #FFD700;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.bg {
+    
+    margin: 20px;
+}
+
+.bg.circle-border img {
+    border-radius: 100%;
+}
+</style>

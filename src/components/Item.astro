@@ -1,0 +1,70 @@
+---
+
+import chest from `../assets/chest.png`;
+import items from '../assets/items.json';
+
+const { id } = Astro.props;
+
+function getItem(id) {
+    const item = items.find(item => item.id == id);
+    return item ? item: "Could not be found.";
+}
+
+const item = getItem(id);
+let imgUrl = "/images/" + decodeURI(item.url); 
+
+let actionText = item.type == "container" ? "Open " : "Pick up "
+---
+
+<h2>You see a "{item.name}"</h2>
+<div>{item.description}</div>
+
+
+<script src="/scripts/global.js" is:inline></script>
+
+<script type="module" is:inline> 
+
+    log("item");
+    let open = false;
+
+    let elem = document.querySelector('.item');
+
+    elem.addEventListener('click', (event) => {
+        event.preventDefault();
+        let id = elem.getAttribute("id");
+       
+        console.log("publish", id);
+
+        publish("item", id);
+        open = true;
+        document.querySelector('.action').style.display = 'none';
+    });
+</script>
+
+<div class="action">
+<a id={item.id} class="item" href="#" >{actionText} {item.name}</a>
+</div>
+
+<div class="container bg circle-border">
+    <img width="300" height="300" id="background" src={imgUrl} alt="" fetchpriority="high" />
+</div>
+
+<style>
+.action {
+    padding: 5px;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    margin: 5px;
+}
+
+.bg {
+    
+    margin: 20px;
+}
+
+.bg.circle-border img {
+    border-radius: 100%;
+}
+</style>
+
+

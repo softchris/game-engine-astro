@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+	</head>
+	<body>
+       
+        <div class="game">
+		    <slot />
+        </div>
+	</body>
+</html>
+
+<style>
+
+    .game {
+        
+
+        @media (max-width: 900px) {
+            grid-template-columns: none;
+            padding: 80px;
+        }
+
+        @media (max-width: 640px) {
+            
+            padding: 0;
+        }
+    }
+
+    .game > * {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+</style>

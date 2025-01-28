@@ -1,0 +1,28 @@
+[{
+    "id": 1,
+    "name": "Chest",
+    "description": "The chest before you is a sight to behold, exuding an aura of malevolence. Its surface is crafted from dark, weathered wood, marred by deep scratches and scars that tell tales of a sinister past. Iron bands, rusted and twisted, wrap around the chest, securing it with an almost skeletal grip.The chest's lock is a grotesque face, its mouth agape in a silent scream, with the keyhole positioned where its tongue should be. The face appears almost lifelike, as if it could start moving at any moment. The entire chest radiates an aura of dread, making you hesitate to approach it, yet its sinister allure is impossible to ignore.",
+    "type": "container",
+    "url": "chest.png",
+    "items": [3]
+},
+{
+    "id": 2,
+    "name": "book",
+    "description": "A magical tome that must be filled with all sorts of powerful spells and enchantments. The cover is made of a dark, leathery material that feels cool to the touch, and the pages are yellowed with age. The book emits a faint, otherworldly glow that seems to pulse with a life of its own. As you flip through the pages, you see intricate runes and sigils that dance across the paper, shifting and changing in a mesmerizing display of magic. The book seems to call out to you, promising untold power and knowledge if you can unlock its secrets.",
+    "type": "item",
+    "url": "book.png"
+}, {
+    "id": 3,
+    "name": "Staff",
+    "description": "A staff probably belonging to a wood elf. The staff is made of a dark, polished wood that gleams in the dim light of the chamber. Intricate carvings wind their way up the length of the staff, depicting scenes of nature and wildlife in exquisite detail. The top of the staff is adorned with a large, shimmering crystal that seems to glow with an inner light. The staff hums with a faint, melodic tune that fills the chamber with a sense of peace and tranquility. As you reach out to touch it, you feel a surge of energy coursing through your veins, as if the staff is alive and eager to be wielded.",
+    "type": "item",
+    "url": "staff.png"
+},
+{
+    "id": 4,
+    "name": "Orb",
+    "description": "A magic orb with a swirling vortex of colors that seem to shift and change with each passing moment. The orb is cool to the touch, its surface smooth and unblemished. As you gaze into its depths, you feel a sense of vertigo wash over you, as if you're being pulled into the swirling maelstrom of colors. The orb seems to pulse with a life of its own, radiating a powerful, otherworldly energy that fills the chamber with an eerie, almost hypnotic light. You can't help but feel drawn to the orb, its mysterious allure beckoning you to reach out and touch it.",
+    "type": "item",
+    "url": "orb.png"
+}]

@@ -1,0 +1,26 @@
+---
+import levels from "../assets/levels.json"
+
+let room = Astro.props.room;
+
+let level = levels.find(level => level.id == room);
+let name = level? level.name : "can't find it";
+let url = level? level.url : "can't find it";
+---
+
+<script type="module" is:inline>
+
+    let elem = document.querySelector('.level');
+
+    elem.addEventListener('click', (event) => {
+        event.preventDefault();
+        let url = decodeURI(elem.getAttribute("id"));
+        // console.log(url);
+        window.location.href = url;
+
+    });
+</script>
+
+<div>
+<a id={url} class="level" href=#" >{name}</a>
+</div>

@@ -1,0 +1,27 @@
+---
+const { title } = Astro.props;
+---
+
+<div class="divider">
+    <img src="/images/divider.png" />
+    <span class="divider-text">{title}</span>
+    <img class="reverse" src="/images/divider.png" />
+</div>
+
+<style>
+.divider {
+    margin-bottom: 20px;
+}
+
+.divider-text {
+    font-size: 32px;
+}
+
+img {
+    width: 50px;
+}    
+
+.reverse {
+    transform: scaleX(-1);
+}
+</style>

@@ -1,0 +1,28 @@
+[{
+    "id": 1,
+    "name": "Level 1 - The dark cave",
+    "description": "Your heart pounds with a mix of excitement and trepidation as you step into the cave. The air is thick with the scent of damp earth and the faint echo of dripping water. Shadows dance on the rough, stone walls, cast by the flickering light of your torch. As you venture deeper, the narrow passageway opens into a cavernous chamber. In the center of the room, a chest sits ominously, its surface covered in ancient runes. The chest emits an eerie, pulsating red glow that bathes the chamber in a sinister light. Your breath catches in your throat as you approach, the glow intensifying with each step.",
+    "url": "/1",
+    "item": "1",
+    "next": "2",
+    "image": "cave.png"
+},
+{
+    "id": 2,
+    "name": "Level 2 - Pit of lava",
+    "description": "The room gives off a red glow, the heat from the lava pit in the center of the room is almost unbearable. ",
+    "url": "/2",
+    "item": "2",
+    "next": "3",
+    "image": "pit.png"
+},
+{
+    "id": 3,
+    "name": "Level 3 - The bridge to nowhere",
+    "description": "There's a narrow bridge that leads to a door on the other side of the room. The bridge looks old and rickety, but it's the only way forward.",
+    "url": "/3",
+    "item": "4",
+    "next": "1",
+    "image": "bridge.png"
+}
+]
